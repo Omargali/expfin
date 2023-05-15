@@ -1,0 +1,48 @@
+{% extends "users/base.html" %}
+
+{% block title %} Home Page {% endblock title%}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Welcome</h1>
+  <p class="lead">Welcome to our <b>Expense Tracker</b> website! We are thrilled to have you here and excited to help you take control of your finances.</p>
+  <hr class="my-4">
+  <p class="lead">
+{#    <a class="btn btn-primary btn-lg" href="{% url 'logout' %}" role="button">Logout</a>#}
+{#    <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Sign in</a>#}
+  </p>
+</div>
+{% endblock content %}
+
+{% block extra_css %}
+<style>
+.jumbotron {
+  background-color: #f8f9fa;
+  color: #212529;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.jumbotron p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.jumbotron hr {
+  border-color: #212529;
+  margin: 2.5rem auto;
+  width: 75%;
+}
+
+.jumbotron .btn {
+  margin-right: 10px;
+}
+</style>
+{% endblock extra_css %}
+
